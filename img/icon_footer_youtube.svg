@@ -1,0 +1,9 @@
+<svg id="Youtube" xmlns="http://www.w3.org/2000/svg" width="32.944" height="32.944" viewBox="0 0 32.944 32.944">
+  <circle id="Elipse_10" data-name="Elipse 10" cx="15.5" cy="15.5" r="15.5" transform="translate(0.944 0.944)" fill="#fff"/>
+  <g id="Twitter">
+    <g id="Youtube-2" data-name="Youtube">
+      <path id="Trazado_187" data-name="Trazado 187" d="M17.111,14.534l-3.946-2.147c-.162-.092-.715.025-.715.211v4.187c0,.183.549.3.711.213l4.122-2.04C17.45,14.868,17.276,14.628,17.111,14.534Z" transform="translate(1.826 1.798)" fill="red"/>
+      <path id="Trazado_188" data-name="Trazado 188" d="M16.472,0A16.472,16.472,0,1,0,32.944,16.472,16.472,16.472,0,0,0,16.472,0ZM25.29,18.783a3.955,3.955,0,0,1-3.955,3.955H11.222a3.955,3.955,0,0,1-3.955-3.955V14.077a3.955,3.955,0,0,1,3.955-3.955H21.335a3.955,3.955,0,0,1,3.955,3.955Z" fill="red"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg id="Instagram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.944" height="32.944" viewBox="0 0 32.944 32.944">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.202" y1="0.025" x2="0.867" y2="0.981" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4c3df2"/>
+      <stop offset="0.498" stop-color="#eb0697"/>
+      <stop offset="0.835" stop-color="#ff6511"/>
+      <stop offset="1" stop-color="#f6c456"/>
+    </linearGradient>
+  </defs>
+  <circle id="Elipse_8" data-name="Elipse 8" cx="15.5" cy="15.5" r="15.5" transform="translate(1.417 0.945)" fill="#fff"/>
+  <g id="Instagram-2" data-name="Instagram">
+    <path id="Trazado_182" data-name="Trazado 182" d="M-68.433,0h0A16.521,16.521,0,0,0-84.905,16.472h0A16.521,16.521,0,0,0-68.433,32.944h0A16.521,16.521,0,0,0-51.961,16.472h0A16.521,16.521,0,0,0-68.433,0Zm9.657,20.328a5.808,5.808,0,0,1-5.8,5.8h-7.71a5.807,5.807,0,0,1-5.8-5.8V12.616a5.806,5.806,0,0,1,5.8-5.8h7.71a5.807,5.807,0,0,1,5.8,5.8Z" transform="translate(84.905 0)" fill="url(#linear-gradient)"/>
+    <path id="Trazado_183" data-name="Trazado 183" d="M-70.148,11.917a2.772,2.772,0,0,0-2.77,2.769,2.772,2.772,0,0,0,2.77,2.77,2.772,2.772,0,0,0,2.769-2.77A2.772,2.772,0,0,0-70.148,11.917Z" transform="translate(86.701 1.786)" fill="url(#linear-gradient)"/>
+    <path id="Trazado_184" data-name="Trazado 184" d="M-66.613,7.662h-7.008a3.626,3.626,0,0,0-3.622,3.622v7.009a3.625,3.625,0,0,0,3.622,3.621h7.008a3.625,3.625,0,0,0,3.622-3.621V11.284A3.626,3.626,0,0,0-66.613,7.662Zm-3.431,11.449a4.328,4.328,0,0,1-4.323-4.323,4.328,4.328,0,0,1,4.323-4.323,4.328,4.328,0,0,1,4.323,4.323A4.328,4.328,0,0,1-70.045,19.111ZM-65.47,11.2A1.029,1.029,0,0,1-66.5,10.175,1.029,1.029,0,0,1-65.47,9.146a1.029,1.029,0,0,1,1.029,1.029A1.029,1.029,0,0,1-65.47,11.2Z" transform="translate(86.589 1.684)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
