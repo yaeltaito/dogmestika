@@ -413,43 +413,91 @@ footer {
 /* Estilos para la página nosotros */
 
 .aboutUs {
-	padding: 30px 15%;
-	min-height: calc(100vh - 100px - 80px);
+	min-height: calc(100vh - 100px);
+	padding: 150px 20%;
+	background-color: #404f60;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .aboutUs__title {
 	font-family: 'Lato', sans-serif;
-	font-size: 3.2rem;
+	font-size: 4.2rem;
 	text-align: center;
-	color: #404f60;
-	margin: 30px;
+	color: white;
+	padding: 25px;
 }
 
-.aboutUs__text {
+.aboutUs__title--subtitle {
+	font-weight: 400;
+	font-size: 2.2rem;
+}
+
+.support {
+	padding: 60px 15%;
+}
+
+.support__subtitle {
 	font-family: 'Lato', sans-serif;
-	font-size: 1.6em;
+	font-size: 2.2rem;
+	text-align: center;
 	color: #404f60;
+}
+
+.support__container {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+	padding: 50px;
 }
 
 /* Estilos para la página servicios */
 
 .services {
 	padding: 30px 15%;
-	min-height: calc(100vh - 100px - 80px);
+	min-height: calc(100vh - 100px);
+	background-color: #d52735;
 }
 
 .services__title {
 	font-family: 'Lato', sans-serif;
 	font-size: 3.2rem;
 	text-align: center;
-	color: #404f60;
+	color: white;
 	margin: 30px;
 }
 
 .services__text {
 	font-family: 'Lato', sans-serif;
-	font-size: 1.6em;
+	font-size: 1.6rem;
+	text-align: center;
+	color: white;
+	margin: 40px;
+}
+
+.services__cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 40px;
+	gap: 30px;
+}
+
+.cards__item {
+	background-color: white;
+	width: 220px;
+	max-height: 350px;
+	border-radius: 10px;
+	padding: 24px;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.4rem;
 	color: #404f60;
+}
+
+.cards__title {
+	font-size: 1.8rem;
+	padding: 16px 0;
 }
 
 /* Estilos para la página nosotros */
