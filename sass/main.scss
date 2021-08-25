@@ -1,3 +1,7 @@
+$color-primary: #d52735;
+$color-secondary: #404f60;
+$color-button-primary: #2680eb;
+
 * {
 	padding: 0;
 	margin: 0;
@@ -58,7 +62,7 @@ header {
 	font-family: 'Lato', sans-serif;
 	font-size: 1.6rem;
 	text-decoration: none;
-	color: #404f60;
+	color: $color-secondary;
 	padding: 0.4rem;
 	border-width: 0px;
 	border-bottom: 2px solid rgba(0, 0, 0, 0);
@@ -67,8 +71,8 @@ header {
 
 .navigation__item:hover,
 .navigation__item:active {
-	border-color: #d52735;
-	color: #d52735;
+	border-color: $color-primary;
+	color: $color-primary;
 }
 
 /* Estilos correspondientes al hero */
@@ -79,14 +83,14 @@ header {
 	justify-content: center;
 	/* Al height del hero se le restaron 100px correspondientes al height del header */
 	height: 85vh;
-	background-image: url(img/hero_01.png);
+	background-image: url(../img/hero_01.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	animation-name: animatedBackground;
 	animation-duration: 2s;
 	animation-timing-function: ease-out;
 	animation-fill-mode: backwards;
-	background-color: #d52735;
+	background-color: $color-primary;
 	color: white;
 	padding: 0 15%;
 	max-height: 760px;
@@ -166,7 +170,7 @@ header {
 	font-family: 'Lato', sans-serif;
 	font-size: 3.2rem;
 	text-align: center;
-	color: #404f60;
+	color: $color-secondary;
 }
 
 .features__table {
@@ -180,7 +184,7 @@ header {
 .table__text {
 	font-family: 'Lato', sans-serif;
 	font-size: 1.6rem;
-	color: #404f60;
+	color: $color-secondary;
 	padding: 5px 20px;
 	vertical-align: baseline;
 }
@@ -227,7 +231,7 @@ header {
 	font-family: 'Lato', sans-serif;
 	font-size: 3.2rem;
 	text-align: center;
-	color: #404f60;
+	color: $color-secondary;
 }
 
 .card__item {
@@ -236,7 +240,7 @@ header {
 	padding: 24px;
 	font-family: 'Lato', sans-serif;
 	font-size: 1.4rem;
-	color: #404f60;
+	color: $color-secondary;
 }
 
 .blockquote {
@@ -315,7 +319,7 @@ footer {
 	font-family: 'Lato', sans-serif;
 	font-size: 3.2rem;
 	text-align: center;
-	color: #404f60;
+	color: $color-secondary;
 	padding: 40px 0px;
 }
 
@@ -327,7 +331,7 @@ footer {
 	background-color: white;
 	border-radius: 10px;
 	font-size: 1.4rem;
-	color: #404f60;
+	color: $color-secondary;
 	box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -353,7 +357,7 @@ footer {
 }
 
 .header__tag--new {
-	background-color: #d52735;
+	background-color: $color-primary;
 	font-family: 'Lato', sans-serif;
 	font-weight: bold;
 	font-size: 1.2rem;
@@ -388,13 +392,13 @@ footer {
 .item__text {
 	font-family: 'Lato', sans-serif;
 	font-size: 1.6rem;
-	color: #404f60;
+	color: $color-secondary;
 }
 
 .item__text--title {
 	font-family: 'Lato', sans-serif;
 	font-size: 2rem;
-	color: #404f60;
+	color: $color-secondary;
 	margin-bottom: 8px;
 }
 
@@ -435,14 +439,14 @@ footer {
 	font-family: 'Lato', sans-serif;
 	font-size: 3.2rem;
 	text-align: center;
-	color: #404f60;
+	color: $color-secondary;
 	margin: 30px;
 }
 
 .detail__text {
 	font-family: 'Lato', sans-serif;
 	font-size: 1.6em;
-	color: #404f60;
+	color: $color-secondary;
 }
 
 /* Estilos para la página nosotros */
@@ -450,7 +454,7 @@ footer {
 .aboutUs {
 	min-height: calc(100vh - 100px);
 	padding: 150px 20%;
-	background-color: #404f60;
+	background-color: $color-secondary;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -477,7 +481,7 @@ footer {
 	font-family: 'Lato', sans-serif;
 	font-size: 2.2rem;
 	text-align: center;
-	color: #404f60;
+	color: $color-secondary;
 }
 
 .support__container {
@@ -492,7 +496,7 @@ footer {
 .services {
 	padding: 30px 15%;
 	min-height: calc(100vh - 100px);
-	background-color: #d52735;
+	background-color: $color-primary;
 }
 
 .services__title {
@@ -527,7 +531,7 @@ footer {
 	padding: 24px;
 	font-family: 'Lato', sans-serif;
 	font-size: 1.4rem;
-	color: #404f60;
+	color: $color-secondary;
 }
 
 .cards__title {
@@ -559,7 +563,7 @@ footer {
 .contactUs__form {
 	font-family: 'Lato', sans-serif;
 	font-size: 1.6rem;
-	color: #404f60;
+	color: $color-secondary;
 	border: none;
 	background-color: white;
 	border-radius: 20px;
@@ -578,7 +582,7 @@ footer {
 	border-radius: 5px;
 	border: solid 1.5px #8295ab;
 	font-family: 'Lato', sans-serif;
-	color: #404f60;
+	color: $color-secondary;
 	font-size: 1.6rem;
 	padding: 8px;
 }

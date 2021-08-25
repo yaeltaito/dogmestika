@@ -1,0 +1,14 @@
+{
+	"name": "dogmestika",
+	"version": "1.0.0",
+	"description": "Curso Desarrollo Frontend - Coderhouse",
+	"main": "index.js",
+	"scripts": {
+		"compile:sass": "node-sass sass/main.scss css/styles.css"
+	},
+	"author": "yaeltaito",
+	"license": "ISC",
+	"devDependencies": {
+		"node-sass": "^6.0.1"
+	}
+}
