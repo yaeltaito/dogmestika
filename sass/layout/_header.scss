@@ -12,18 +12,14 @@ header {
 
 .header__logo {
 	display: flex;
+	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 }
 
 @media (max-width: 898px) {
 	.header__logo {
-		flex-direction: column;
 		gap: 8px;
-	}
-
-	.navigation__list {
-		margin: 8px;
 	}
 
 	header {
@@ -32,10 +28,7 @@ header {
 }
 
 .navigation__list {
-	display: flex;
-	list-style: none;
-	gap: 20px;
-	margin-bottom: 0;
+	gap: 12px;
 }
 
 .navigation__item:link,

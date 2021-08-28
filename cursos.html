@@ -23,23 +23,35 @@
 		<!-- header con logo y barra de navegación -->
 
 		<header>
-			<section class="header__logo">
-				<a href="index.html"
-					><img src="img/logo_dogmestika.svg" alt="Logo de Dogméstika"
-				/></a>
-				<nav>
-					<ul class="navigation__list">
-						<li><a class="navigation__item" href="cursos.html">Cursos</a></li>
-						<li>
-							<a class="navigation__item" href="nosotros.html">Nosotros</a>
-						</li>
-						<li>
-							<a class="navigation__item" href="servicios.html">Servicios</a>
-						</li>
-						<li>
-							<a class="navigation__item" href="contacto.html">Contacto</a>
-						</li>
-					</ul>
+			<section>
+				<nav class="navbar navbar-expand-lg navbar-light header__logo">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="index.html"
+							><img src="img/logo_dogmestika.svg" alt="Logo de Dogméstika"
+						/></a>
+						<button
+							class="navbar-toggler"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarNavAltMarkup"
+							aria-controls="navbarNavAltMarkup"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div
+							class="collapse navbar-collapse justify-content-end"
+							id="navbarNavAltMarkup"
+						>
+							<div class="navbar-nav my-4 navigation__list">
+								<a class="navigation__item" href="cursos.html">Cursos</a>
+								<a class="navigation__item" href="nosotros.html">Nosotros</a>
+								<a class="navigation__item" href="servicios.html">Servicios</a>
+								<a class="navigation__item" href="contacto.html">Contacto</a>
+							</div>
+						</div>
+					</div>
 				</nav>
 			</section>
 		</header>
@@ -236,5 +248,6 @@
 			integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
 			crossorigin="anonymous"
 		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	</body>
 </html>
