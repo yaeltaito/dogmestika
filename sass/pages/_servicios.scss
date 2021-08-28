@@ -1,0 +1,47 @@
+/* Estilos para la página servicios */
+
+.services {
+	padding: 30px 20%;
+	min-height: calc(100vh - 100px);
+	background-color: $color-red;
+}
+
+.services__title {
+	font-family: $font-family-primary;
+	font-size: 3.2rem;
+	text-align: center;
+	color: $color-white;
+	margin: 30px;
+}
+
+.services__text {
+	font-family: $font-family-primary;
+	font-size: 1.6rem;
+	text-align: center;
+	color: $color-white;
+	margin: 40px;
+}
+
+.services__cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 40px;
+	gap: 30px;
+}
+
+.cards__item {
+	background-color: $color-white;
+	width: 220px;
+	max-height: 350px;
+	border-radius: 10px;
+	padding: 24px;
+	font-family: $font-family-primary;
+	font-size: 1.4rem;
+	color: $color-grey-dark;
+}
+
+.cards__title {
+	font-size: 1.8rem;
+	padding: 16px 0;
+}

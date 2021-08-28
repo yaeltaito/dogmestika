@@ -43,7 +43,7 @@ header {
 .navigation__item:link,
 .navigation__item:visited {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.6rem;
   text-decoration: none;
   color: #404f60;
@@ -57,12 +57,47 @@ header {
   border-color: #d52735;
   color: #d52735; }
 
+/* Estilos del footer */
+footer {
+  padding: 0 15%;
+  bottom: 0;
+  background-color: #2d2d2d;
+  color: #ffffff;
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  footer p {
+    font-family: "Lato", sans-serif;
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 10px; }
+  footer ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0; }
+    footer ul li a {
+      list-style: none;
+      margin: 0 10px; }
+      footer ul li a img {
+        transition: transform 0.3s ease-out; }
+      footer ul li a img:hover,
+      footer ul li a img:active {
+        transition: transform 0.3s ease-out;
+        transform: scale(1.15); }
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    padding: 0 5%; } }
+
 /* Estilos correspondientes al hero */
 .hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* Al height del hero se le restaron 100px correspondientes al height del header */
   height: 85vh;
   background-image: url(../img/hero_01.png);
   background-repeat: no-repeat;
@@ -72,14 +107,14 @@ header {
   animation-timing-function: ease-out;
   animation-fill-mode: backwards;
   background-color: #d52735;
-  color: white;
+  color: #ffffff;
   padding: 0 15%;
   max-height: 760px; }
 
 .hero__h2 {
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
   font-size: 4.5rem;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
   animation-name: moveInLeft;
   animation-duration: 2s;
   animation-timing-function: ease-out;
@@ -91,13 +126,13 @@ header {
   display: inline-block;
   width: fit-content;
   margin: 40px 0px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.6rem;
   padding: 8px 16px;
   background-color: #2680eb;
   border: none;
   border-radius: 20px;
-  color: white;
+  color: #ffffff;
   transition: all 0.2s;
   animation-name: moveInLeft;
   animation-duration: 2s;
@@ -132,7 +167,7 @@ header {
   align-items: center; }
 
 .features__title {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 3.2rem;
   text-align: center;
   color: #404f60; }
@@ -140,15 +175,27 @@ header {
 .features__table {
   margin: 40px auto; }
 
-.table__icon {
-  padding: 5px 20px; }
+.icon--mode {
+  background-image: url("../img/icon_features_01.svg");
+  background-repeat: no-repeat;
+  height: 70px; }
 
-.table__text {
-  font-family: 'Lato', sans-serif;
+.icon--teachers {
+  background-image: url("../img/icon_features_02.svg");
+  background-repeat: no-repeat;
+  height: 70px; }
+
+.icon--payment {
+  background-image: url("../img/icon_features_03.svg");
+  background-repeat: no-repeat;
+  height: 70px; }
+
+.table__text, .table__text--title {
+  font-family: "Lato", sans-serif;
   font-size: 1.6rem;
   color: #404f60;
-  padding: 5px 20px;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  margin: 10px 0; }
 
 .table__text--title {
   font-size: 2.4rem;
@@ -161,9 +208,9 @@ header {
   padding: 8px 16px;
   display: flex;
   justify-content: center;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.6rem;
-  color: white;
+  color: #ffffff;
   border: none;
   border-radius: 20px;
   background-color: #2680eb; }
@@ -183,16 +230,16 @@ header {
   margin-bottom: 30px; }
 
 .testimonials__title {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 3.2rem;
   text-align: center;
   color: #404f60; }
 
 .card__item {
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 10px;
   padding: 24px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.4rem;
   color: #404f60; }
 
@@ -201,53 +248,79 @@ header {
 
 .item__rate {
   margin-bottom: 2rem;
-  color: orange; }
+  color: #ffa500; }
 
 .item__title {
   font-size: 1.8rem;
   padding: 16px 0; }
 
-/* Estilos del footer */
-footer {
-  padding: 0 15%;
-  bottom: 0;
-  background-color: #2d2d2d;
-  color: white;
-  min-height: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+/* Estilos para la página contacto */
+.contactUs {
+  padding: 30px 15%;
+  min-height: calc(100vh - 100px - 80px);
+  background: linear-gradient(to bottom, #2680eb 50%, #0c468e); }
 
-.footer__text {
-  font-family: 'Lato', sans-serif;
+@media (max-width: 1200px) {
+  .contactUs img {
+    display: none; } }
+
+.contactUs__container {
+  display: flex;
+  justify-content: center; }
+
+.contactUs__title {
+  font-family: "Lato", sans-serif;
+  font-size: 3.2rem;
+  text-align: center;
+  color: #ffffff;
+  margin: 30px; }
+
+.contactUs__form {
+  font-family: "Lato", sans-serif;
   font-size: 1.6rem;
-  margin: 0;
-  padding: 10px; }
+  color: #404f60;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 3.2rem;
+  place-self: center;
+  box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.1); }
 
-.footer__socialMedia {
-  display: flex;
-  list-style: none;
-  padding-left: 0; }
+.form__label {
+  font-size: 1.6rem;
+  font-weight: bold; }
 
-.socialMedia__item:link,
-.socialMedia__item:visited {
-  list-style: none;
-  margin: 0 10px; }
+.form__input {
+  margin-top: 8px;
+  width: 300px;
+  border-radius: 5px;
+  border: solid 1.5px #8295ab;
+  font-family: "Lato", sans-serif;
+  color: #404f60;
+  font-size: 1.6rem;
+  padding: 8px; }
 
-.socialMedia__item img {
-  transition: transform 0.3s ease-out; }
+.form__button, .form__button--alternative {
+  text-decoration: none;
+  padding: 8px 16px;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  background-color: #2680eb;
+  width: 100%; }
 
-.socialMedia__item img:hover,
-.socialMedia__item img:active {
-  transition: transform 0.3s ease-out;
-  transform: scale(1.15); }
+.form__button:hover, .form__button--alternative:hover,
+.form__button:active,
+.form__button--alternative:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
-@media (max-width: 768px) {
-  footer {
-    flex-direction: column;
-    gap: 8px;
-    align-items: flex-start;
-    padding: 0 5%; } }
+.form__button--alternative {
+  color: #2680eb;
+  border: solid 2px;
+  background-color: #ffffff; }
 
 /* Estilos del sección principal cursos */
 .courses {
@@ -255,7 +328,7 @@ footer {
   background-color: #f7f7f7; }
 
 .courses__title {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 3.2rem;
   text-align: center;
   color: #404f60;
@@ -266,7 +339,7 @@ footer {
   overflow: hidden;
   height: 400px;
   grid-template-rows: 40% 40% 20%;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 10px;
   font-size: 1.4rem;
   color: #404f60;
@@ -281,27 +354,23 @@ footer {
   position: relative;
   overflow: hidden; }
 
-.header__tag {
+.header__tag, .header__tag--new, .header__tag--free {
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
   position: absolute;
   top: 16px;
   left: 16px;
   padding: 4px 16px;
   border-radius: 16px;
-  z-index: 1000; }
+  z-index: 1000;
+  color: #ffffff; }
 
 .header__tag--new {
-  background-color: #d52735;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: white; }
+  background-color: #d52735; }
 
 .header__tag--free {
-  background-color: green;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: white; }
+  background-color: #008000; }
 
 .header__image {
   width: 100%;
@@ -318,12 +387,12 @@ footer {
   justify-items: start; }
 
 .item__text {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.6rem;
   color: #404f60; }
 
 .item__text--title {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 2rem;
   color: #404f60;
   margin-bottom: 8px; }
@@ -334,9 +403,9 @@ footer {
   place-self: center;
   align-content: center;
   padding: 8px 16px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.6rem;
-  color: white;
+  color: #ffffff;
   border: none;
   border-radius: 20px;
   background-color: #2680eb; }
@@ -344,29 +413,6 @@ footer {
 .item__button:hover,
 .item__button:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
-
-/* Estilos para el detalle del curso */
-.detail {
-  padding: 50px 15%;
-  min-height: calc(100vh - 100px - 80px); }
-
-.detail__back {
-  text-decoration: none;
-  color: #2680eb;
-  font-family: 'Lato', sans-serif;
-  font-size: 1.6rem; }
-
-.detail__title {
-  font-family: 'Lato', sans-serif;
-  font-size: 3.2rem;
-  text-align: center;
-  color: #404f60;
-  margin: 30px; }
-
-.detail__text {
-  font-family: 'Lato', sans-serif;
-  font-size: 1.6em;
-  color: #404f60; }
 
 /* Estilos para la página nosotros */
 .aboutUs {
@@ -378,21 +424,21 @@ footer {
   justify-content: center; }
 
 .aboutUs__title {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 4.2rem;
   text-align: center;
-  color: white;
+  color: #ffffff;
   padding: 25px; }
 
 .aboutUs__title--subtitle {
-  font-weight: 400;
-  font-size: 2.2rem; }
+  font-size: 2.2rem;
+  font-weight: 400; }
 
 .support {
   padding: 60px 15%; }
 
 .support__subtitle {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 2.2rem;
   text-align: center;
   color: #404f60; }
@@ -400,27 +446,60 @@ footer {
 .support__container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 50px;
   padding: 50px; }
 
+.sponsor--royal {
+  background-image: url("../img/logo_royal_canin.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 200px;
+  height: 200px; }
+
+.sponsor--pedigree {
+  background-image: url("../img/logo_pedigree.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 200px;
+  height: 200px; }
+
+.sponsor--kong {
+  background-image: url("../img/logo_kong.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 200px;
+  height: 200px; }
+
+.sponsor--power {
+  background-image: url("../img/logo_pipeta_power.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 200px;
+  height: 200px; }
+
 /* Estilos para la página servicios */
 .services {
-  padding: 30px 15%;
+  padding: 30px 20%;
   min-height: calc(100vh - 100px);
   background-color: #d52735; }
 
 .services__title {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 3.2rem;
   text-align: center;
-  color: white;
+  color: #ffffff;
   margin: 30px; }
 
 .services__text {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.6rem;
   text-align: center;
-  color: white;
+  color: #ffffff;
   margin: 40px; }
 
 .services__cards {
@@ -431,77 +510,15 @@ footer {
   gap: 30px; }
 
 .cards__item {
-  background-color: white;
+  background-color: #ffffff;
   width: 220px;
   max-height: 350px;
   border-radius: 10px;
   padding: 24px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.4rem;
   color: #404f60; }
 
 .cards__title {
   font-size: 1.8rem;
   padding: 16px 0; }
-
-/* Estilos para la página nosotros */
-.contactUs {
-  padding: 30px 15%;
-  min-height: calc(100vh - 100px - 80px);
-  background: linear-gradient(to bottom, #2680eb 50%, #0c468e); }
-
-.contactUs__container {
-  display: flex;
-  justify-content: center; }
-
-.contactUs__title {
-  font-family: 'Lato', sans-serif;
-  font-size: 3.2rem;
-  text-align: center;
-  color: white;
-  margin: 30px; }
-
-.contactUs__form {
-  font-family: 'Lato', sans-serif;
-  font-size: 1.6rem;
-  color: #404f60;
-  border: none;
-  background-color: white;
-  border-radius: 20px;
-  padding: 3.2rem;
-  place-self: center;
-  box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.1); }
-
-.form__label {
-  font-weight: bold; }
-
-.form__input {
-  margin-top: 8px;
-  width: 300px;
-  border-radius: 5px;
-  border: solid 1.5px #8295ab;
-  font-family: 'Lato', sans-serif;
-  color: #404f60;
-  font-size: 1.6rem;
-  padding: 8px; }
-
-.form__button {
-  text-decoration: none;
-  padding: 8px 16px;
-  justify-content: center;
-  font-family: 'Lato', sans-serif;
-  font-size: 1.6rem;
-  color: white;
-  border: none;
-  border-radius: 20px;
-  background-color: #2680eb;
-  width: 100%; }
-
-.form__button:hover,
-.form__button:active {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
-
-.form__button--alternative {
-  color: #2680eb;
-  border: solid 2px;
-  background-color: white; }

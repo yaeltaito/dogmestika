@@ -1,0 +1,5 @@
+// Función para tamano y peso de la fuente. El parámetro weight es opcional
+@mixin font-sizes($size, $weight: null) {
+	font-size: $size;
+	font-weight: $weight;
+}

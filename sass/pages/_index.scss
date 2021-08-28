@@ -1,0 +1,193 @@
+/* Estilos correspondientes al hero */
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 85vh;
+	background-image: url(../img/hero_01.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	animation-name: animatedBackground;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: backwards;
+	background-color: $color-red;
+	color: $color-white;
+	padding: 0 15%;
+	max-height: 760px;
+}
+
+.hero__h2 {
+	@include font-sizes(4.5rem, bold);
+	font-family: $font-family-primary;
+	animation-name: moveInLeft;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: backwards;
+}
+
+.hero__button:link,
+.hero__button:visited {
+	text-decoration: none;
+	display: inline-block;
+	width: fit-content;
+	margin: 40px 0px;
+	font-family: $font-family-primary;
+	font-size: 1.6rem;
+	padding: 8px 16px;
+	background-color: $color-blue;
+	border: none;
+	border-radius: 20px;
+	color: $color-white;
+	transition: all 0.2s;
+	animation-name: moveInLeft;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: backwards;
+}
+
+.hero__button:hover,
+.hero__button:active {
+	box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+}
+
+@keyframes moveInLeft {
+	0% {
+		transform: translateX(-10rem);
+	}
+
+	50% {
+		transform: translateX(3rem);
+	}
+
+	100% {
+		transform: translate(0);
+	}
+}
+
+@keyframes animatedBackground {
+	0% {
+		background-position-x: 100%;
+	}
+	50% {
+		background-position-x: 35%;
+	}
+	100% {
+		background-position-x: 50%;
+	}
+}
+
+/* Estilos correspondientes a sección features */
+
+.features {
+	padding: 60px 15%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.features__title {
+	font-family: $font-family-primary;
+	font-size: 3.2rem;
+	text-align: center;
+	color: $color-grey-dark;
+}
+
+.features__table {
+	margin: 40px auto;
+}
+
+$features: (
+	mode: '01',
+	teachers: '02',
+	payment: '03',
+);
+
+@each $feature, $number in $features {
+	.icon--#{$feature} {
+		background-image: url('../img/icon_features_#{$number}.svg');
+		background-repeat: no-repeat;
+		height: 70px;
+	}
+}
+
+.table__text {
+	font-family: $font-family-primary;
+	font-size: 1.6rem;
+	color: $color-grey-dark;
+	vertical-align: baseline;
+	margin: 10px 0;
+}
+
+.table__text--title {
+	@extend.table__text;
+	@include font-sizes(2.4rem, 700);
+}
+
+.features__button:link,
+.features__button:visited {
+	text-decoration: none;
+	width: fit-content;
+	padding: 8px 16px;
+	display: flex;
+	justify-content: center;
+	font-family: $font-family-primary;
+	font-size: 1.6rem;
+	color: $color-white;
+	border: none;
+	border-radius: 20px;
+	background-color: $color-blue;
+}
+
+.features__button:hover,
+.features__button:active {
+	box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+}
+
+/* Estilos correspondientes a sección testimonials */
+
+.testimonials {
+	padding: 60px 15% 100px 15%;
+	background: linear-gradient(
+		to bottom,
+		$color-grey-extra-light 50%,
+		$color-grey-light
+	);
+}
+
+.quote {
+	color: rgba($color-black, 0.1);
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.testimonials__title {
+	font-family: $font-family-primary;
+	font-size: 3.2rem;
+	text-align: center;
+	color: $color-grey-dark;
+}
+
+.card__item {
+	background-color: $color-white;
+	border-radius: 10px;
+	padding: 24px;
+	font-family: $font-family-primary;
+	font-size: 1.4rem;
+	color: $color-grey-dark;
+}
+
+.blockquote {
+	min-height: 100px;
+}
+
+.item__rate {
+	margin-bottom: 2rem;
+	color: $color-orange;
+}
+
+.item__title {
+	font-size: 1.8rem;
+	padding: 16px 0;
+}

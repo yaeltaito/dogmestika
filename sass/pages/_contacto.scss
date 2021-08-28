@@ -1,0 +1,80 @@
+/* Estilos para la página contacto */
+
+.contactUs {
+	padding: 30px 15%;
+	min-height: calc(100vh - 100px - 80px);
+	background: linear-gradient(to bottom, $color-blue 50%, $color-blue-dark);
+}
+
+@media (max-width: 1200px) {
+	.contactUs {
+		img {
+			display: none;
+		}
+	}
+}
+
+.contactUs__container {
+	display: flex;
+	justify-content: center;
+}
+
+.contactUs__title {
+	font-family: $font-family-primary;
+	font-size: 3.2rem;
+	text-align: center;
+	color: $color-white;
+	margin: 30px;
+}
+
+.contactUs__form {
+	font-family: $font-family-primary;
+	font-size: 1.6rem;
+	color: $color-grey-dark;
+	border: none;
+	background-color: $color-white;
+	border-radius: 20px;
+	padding: 3.2rem;
+	place-self: center;
+	box-shadow: 2px 2px 20px 0px rgba($color-black, 0.1);
+}
+
+.form__label {
+	@include font-sizes(1.6rem, bold);
+}
+
+.form__input {
+	margin-top: 8px;
+	width: 300px;
+	border-radius: 5px;
+	border: solid 1.5px $color-grey;
+	font-family: $font-family-primary;
+	color: $color-grey-dark;
+	font-size: 1.6rem;
+	padding: 8px;
+}
+
+.form__button {
+	text-decoration: none;
+	padding: 8px 16px;
+	justify-content: center;
+	font-family: $font-family-primary;
+	font-size: 1.6rem;
+	color: $color-white;
+	border: none;
+	border-radius: 20px;
+	background-color: $color-blue;
+	width: 100%;
+}
+
+.form__button:hover,
+.form__button:active {
+	box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+}
+
+.form__button--alternative {
+	@extend.form__button;
+	color: $color-blue;
+	border: solid 2px;
+	background-color: $color-white;
+}

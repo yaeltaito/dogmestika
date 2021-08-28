@@ -1,0 +1,109 @@
+/* Estilos del sección principal cursos */
+
+.courses {
+	min-height: calc(100vh - 100px - 80px);
+	background-color: $color-grey-extra-light;
+}
+
+.courses__title {
+	font-family: $font-family-primary;
+	font-size: 3.2rem;
+	text-align: center;
+	color: $color-grey-dark;
+	padding: 40px 0px;
+}
+
+.courses__item {
+	display: grid;
+	overflow: hidden;
+	height: 400px;
+	grid-template-rows: 40% 40% 20%;
+	background-color: $color-white;
+	border-radius: 10px;
+	font-size: 1.4rem;
+	color: $color-grey-dark;
+	box-shadow: 2px 2px 20px 0px rgba($color-black, 0.1);
+}
+
+@media (max-width: 768px) {
+	.courses__item {
+		width: 320px;
+		margin: 0 auto;
+	}
+}
+
+.item__header {
+	position: relative;
+	overflow: hidden;
+}
+
+.header__tag {
+	font-family: $font-family-primary;
+	@include font-sizes(1.2rem, bold);
+	position: absolute;
+	top: 16px;
+	left: 16px;
+	padding: 4px 16px;
+	border-radius: 16px;
+	z-index: 1000;
+	color: $color-white;
+}
+
+.header__tag--new {
+	@extend.header__tag;
+	background-color: $color-red;
+}
+
+.header__tag--free {
+	@extend.header__tag;
+	background-color: $color-green;
+}
+
+.header__image {
+	width: 100%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	transition: transform 0.3s ease-out;
+}
+
+.header__image:hover,
+.header__image:active {
+	transform: scale(1.05);
+}
+
+.item__content {
+	padding: 12px 24px;
+	justify-items: start;
+}
+
+.item__text {
+	font-family: $font-family-primary;
+	font-size: 1.6rem;
+	color: $color-grey-dark;
+}
+
+.item__text--title {
+	font-family: $font-family-primary;
+	font-size: 2rem;
+	color: $color-grey-dark;
+	margin-bottom: 8px;
+}
+
+.item__button:link,
+.item__button:visited {
+	text-decoration: none;
+	place-self: center;
+	align-content: center;
+	padding: 8px 16px;
+	font-family: $font-family-primary;
+	font-size: 1.6rem;
+	color: $color-white;
+	border: none;
+	border-radius: 20px;
+	background-color: $color-blue;
+}
+
+.item__button:hover,
+.item__button:active {
+	box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+}

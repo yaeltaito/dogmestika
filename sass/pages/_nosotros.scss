@@ -1,0 +1,59 @@
+/* Estilos para la página nosotros */
+
+.aboutUs {
+	min-height: calc(100vh - 100px);
+	padding: 150px 20%;
+	background-color: $color-grey-dark;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.aboutUs__title {
+	font-family: $font-family-primary;
+	font-size: 4.2rem;
+	text-align: center;
+	color: $color-white;
+	padding: 25px;
+}
+
+.aboutUs__title--subtitle {
+	@include font-sizes(2.2rem, 400);
+}
+
+.support {
+	padding: 60px 15%;
+}
+
+.support__subtitle {
+	font-family: $font-family-primary;
+	font-size: 2.2rem;
+	text-align: center;
+	color: $color-grey-dark;
+}
+
+.support__container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 50px;
+	padding: 50px;
+}
+
+$sponsors: (
+	royal: 'logo_royal_canin.png',
+	pedigree: 'logo_pedigree.png',
+	kong: 'logo_kong.jpeg',
+	power: 'logo_pipeta_power.jpeg',
+);
+
+@each $sponsor, $file in $sponsors {
+	.sponsor--#{$sponsor} {
+		background-image: url('../img/#{$file}');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		width: 200px;
+		height: 200px;
+	}
+}

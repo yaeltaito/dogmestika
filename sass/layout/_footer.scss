@@ -1,0 +1,50 @@
+/* Estilos del footer */
+footer {
+	padding: 0 15%;
+	bottom: 0;
+	background-color: $color-grey-extra-dark;
+	color: $color-white;
+	min-height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	p {
+		font-family: $font-family-primary;
+		font-size: 1.6rem;
+		margin: 0;
+		padding: 10px;
+	}
+
+	ul {
+		display: flex;
+		list-style: none;
+		padding-left: 0;
+
+		li {
+			a {
+				list-style: none;
+				margin: 0 10px;
+
+				img {
+					transition: transform 0.3s ease-out;
+				}
+
+				img:hover,
+				img:active {
+					transition: transform 0.3s ease-out;
+					transform: scale(1.15);
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px,) {
+	footer {
+		flex-direction: column;
+		gap: 8px;
+		align-items: flex-start;
+		padding: 0 5%;
+	}
+}
