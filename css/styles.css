@@ -94,9 +94,12 @@ footer {
   flex-direction: column;
   justify-content: center;
   height: 85vh;
+  min-height: 50rem;
   background-image: url(../img/hero_01.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
+  background-position-x: 80%;
+  background-size: contain;
   animation-name: animatedBackground;
   animation-duration: 2s;
   animation-timing-function: ease-out;
@@ -114,6 +117,16 @@ footer {
   animation-duration: 2s;
   animation-timing-function: ease-out;
   animation-fill-mode: backwards; }
+
+@media (max-width: 992px) {
+  .hero {
+    justify-content: flex-start; }
+  .hero__h1 {
+    padding-top: 10rem; } }
+
+@media (max-width: 768px) {
+  .hero__h1 {
+    padding-top: 4rem; } }
 
 .hero__button:link,
 .hero__button:visited {
@@ -150,9 +163,9 @@ footer {
   0% {
     background-position-x: 100%; }
   50% {
-    background-position-x: 35%; }
+    background-position-x: 65%; }
   100% {
-    background-position-x: 50%; } }
+    background-position-x: 80%; } }
 
 /* Estilos correspondientes a sección features */
 .features {
