@@ -18,7 +18,7 @@
 	max-height: 760px;
 }
 
-.hero__h2 {
+.hero__h1 {
 	@include font-sizes(4.5rem, bold);
 	font-family: $font-family-primary;
 	animation-name: moveInLeft;
