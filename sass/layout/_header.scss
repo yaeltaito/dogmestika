@@ -17,6 +17,13 @@ header {
 	align-items: center;
 }
 
+.navbar-brand {
+	img {
+		width: 253px;
+		height: 48px;
+	}
+}
+
 @media (max-width: 898px) {
 	.header__logo {
 		gap: 8px;

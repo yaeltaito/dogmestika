@@ -26,6 +26,10 @@ header {
   justify-content: space-between;
   align-items: center; }
 
+.navbar-brand img {
+  width: 253px;
+  height: 48px; }
+
 @media (max-width: 898px) {
   .header__logo {
     gap: 8px; }
@@ -75,7 +79,9 @@ footer {
       list-style: none;
       margin: 0 10px; }
       footer ul li a img {
-        transition: transform 0.3s ease-out; }
+        transition: transform 0.3s ease-out;
+        width: 32px;
+        height: 32px; }
       footer ul li a img:hover,
       footer ul li a img:active {
         transition: transform 0.3s ease-out;
