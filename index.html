@@ -38,7 +38,7 @@
 		<header>
 			<section>
 				<nav class="navbar navbar-expand-lg navbar-light header__logo">
-					<div class="container-fluid">
+					<div class="container-fluid navbar__container">
 						<a class="navbar-brand" href="index.html"
 							><img src="img/logo_dogmestika.svg" alt="Logo de Dogméstika"
 						/></a>
@@ -83,14 +83,14 @@
 
 			<!-- Sección features -->
 			<section class="features">
-				<h3 class="features__title">¿Qué nos hace especiales?</h3>
+				<h2 class="features__title">¿Qué nos hace especiales?</h2>
 				<div class="container mt-5">
 					<div class="row g-5 justify-content-center">
 						<!-- Feature 01 -->
 						<div class="col-md-6 col-lg-4 col-xl-3 col-xxl-3">
 							<div class="my-5">
 								<div class="icon--mode"></div>
-								<h5 class="table__text--title">Modalidad en manada</h5>
+								<h3 class="table__text--title">Modalidad en manada</h3>
 								<p class="table__text">
 									Somos unos convencidos de que se aprende mejor en grupo.
 								</p>
@@ -101,7 +101,7 @@
 						<div class="col-md-6 col-lg-4 col-xl-3 col-xxl-3">
 							<div class="my-5">
 								<div class="icon--teachers"></div>
-								<h5 class="table__text--title">Profesores caninos</h5>
+								<h3 class="table__text--title">Profesores caninos</h3>
 								<p class="table__text">
 									Garantizamos que los profesores tienen experiencia real.
 								</p>
@@ -112,7 +112,7 @@
 						<div class="col-md-6 col-lg-4 col-xl-3 col-xxl-3">
 							<div class="my-5">
 								<div class="icon--payment"></div>
-								<h5 class="table__text--title">Pago con huesitos</h5>
+								<h3 class="table__text--title">Pago con huesitos</h3>
 								<p class="table__text">
 									Pago accesible en cómodas cuotas en una moneda de fácil
 									acceso.
@@ -127,69 +127,152 @@
 			<!-- Sección testimonials -->
 
 			<section class="testimonials">
-				<h3 class="testimonials__title">Testimonios</h3>
-				<div class="container mt-5">
-					<div class="row g-5">
-						<!-- Testimonio 01 -->
-						<div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-							<div class="card__item">
-								<div class="item__rate">
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star-half-alt"></i>
+				<h2 class="testimonials__title">Testimonios</h2>
+
+				<div
+					id="carouselTestimonials"
+					class="carousel slide"
+					data-bs-ride="carousel"
+					data-bs-interval="7000"
+				>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="container mt-5">
+								<div class="row g-5">
+									<!-- Testimonio 01 -->
+									<div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+										<div class="card__item">
+											<div class="item__rate">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star-half-alt"></i>
+											</div>
+											<div class="quote">
+												<i class="fas fa-quote-left fa-4x"></i>
+											</div>
+											<blockquote class="blockquote fs-3">
+												Me comí mi camita y tuve que dormir en el piso. Espero
+												que el curso me ayude a mejorar.
+											</blockquote>
+											<figcaption class="blockquote-footer fs-4 text-end my-2">
+												<em>Golden Retriever anónimo</em>
+											</figcaption>
+										</div>
+									</div>
+
+									<!-- Testimonio 02 -->
+									<div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+										<div class="card__item">
+											<div class="item__rate">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+											</div>
+											<div class="quote">
+												<i class="fa fa-quote-left fa-4x"></i>
+											</div>
+											<blockquote class="blockquote fs-3">
+												Mi humano hace todos los trucos. Recomiendo 100% el
+												curso de manipulación básica!
+											</blockquote>
+											<figcaption class="blockquote-footer fs-4 text-end my-2">
+												<em>Mojito</em>
+											</figcaption>
+										</div>
+									</div>
+
+									<!-- Testimonio 03 -->
+									<div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+										<div class="card__item">
+											<div class="item__rate">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+											</div>
+											<div class="quote">
+												<i class="fa fa-quote-left fa-4x"></i>
+											</div>
+											<blockquote class="blockquote fs-3">
+												Con ezte curso mejoré todas miz cualidadez!! Amo a miz
+												humanoz!!
+											</blockquote>
+											<figcaption class="blockquote-footer fs-4 text-end my-2">
+												<em>Chopper</em>
+											</figcaption>
+										</div>
+									</div>
 								</div>
-								<div class="quote"><i class="fas fa-quote-left fa-4x"></i></div>
-								<blockquote class="blockquote fs-3">
-									Me comí mi camita y tuve que dormir en el piso. Espero que el
-									curso me ayude a mejorar.
-								</blockquote>
-								<figcaption class="blockquote-footer fs-4 text-end my-2">
-									<em>Golden Retriever anónimo</em>
-								</figcaption>
 							</div>
 						</div>
+						<div class="carousel-item">
+							<div class="container mt-5">
+								<div class="row g-5">
+									<!-- Testimonio 04 -->
+									<div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+										<div class="card__item">
+											<div class="item__rate">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star-half-alt"></i>
+											</div>
+											<div class="quote">
+												<i class="fas fa-quote-left fa-4x"></i>
+											</div>
+											<blockquote class="blockquote fs-3">Soy el 4</blockquote>
+											<figcaption class="blockquote-footer fs-4 text-end my-2">
+												<em>Golden Retriever anónimo</em>
+											</figcaption>
+										</div>
+									</div>
 
-						<!-- Testimonio 02 -->
-						<div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-							<div class="card__item">
-								<div class="item__rate">
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-								</div>
-								<div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
-								<blockquote class="blockquote fs-3">
-									Mi humano hace todos los trucos. Recomiendo 100% el curso de
-									manipulación básica!
-								</blockquote>
-								<figcaption class="blockquote-footer fs-4 text-end my-2">
-									<em>Mojito</em>
-								</figcaption>
-							</div>
-						</div>
+									<!-- Testimonio 05 -->
+									<div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+										<div class="card__item">
+											<div class="item__rate">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+											</div>
+											<div class="quote">
+												<i class="fa fa-quote-left fa-4x"></i>
+											</div>
+											<blockquote class="blockquote fs-3">Soy el 5</blockquote>
+											<figcaption class="blockquote-footer fs-4 text-end my-2">
+												<em>Mojito</em>
+											</figcaption>
+										</div>
+									</div>
 
-						<!-- Testimonio 03 -->
-						<div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-							<div class="card__item">
-								<div class="item__rate">
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
+									<!-- Testimonio 06 -->
+									<div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+										<div class="card__item">
+											<div class="item__rate">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+											</div>
+											<div class="quote">
+												<i class="fa fa-quote-left fa-4x"></i>
+											</div>
+											<blockquote class="blockquote fs-3">Soy el 6</blockquote>
+											<figcaption class="blockquote-footer fs-4 text-end my-2">
+												<em>Chopper</em>
+											</figcaption>
+										</div>
+									</div>
 								</div>
-								<div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
-								<blockquote class="blockquote fs-3">
-									Con ezte curso mejoré todas miz cualidadez!! Amo a miz
-									humanoz!!
-								</blockquote>
-								<figcaption class="blockquote-footer fs-4 text-end my-2">
-									<em>Chopper</em>
-								</figcaption>
 							</div>
 						</div>
 					</div>

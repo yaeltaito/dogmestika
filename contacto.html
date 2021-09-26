@@ -34,7 +34,7 @@
 		<header>
 			<section>
 				<nav class="navbar navbar-expand-lg navbar-light header__logo">
-					<div class="container-fluid">
+					<div class="container-fluid navbar__container">
 						<a class="navbar-brand" href="index.html"
 							><img src="img/logo_dogmestika.svg" alt="Logo de Dogméstika"
 						/></a>
@@ -73,15 +73,21 @@
 					<img src="img/location_contact_us.png" alt="Mapa con dirección" />
 					<form class="contactUs__form">
 						<div>
-							<label class="form__label" for="nombre">Nombre</label>
+							<label class="form__label" for="name">Nombre</label>
 							<br />
-							<input class="form__input" type="text" name="nombre" required />
+							<input
+								id="name"
+								class="form__input"
+								type="text"
+								name="nombre"
+								required
+							/>
 						</div>
 						<br />
 						<div>
 							<label class="form__label" for="raza">Raza</label>
 							<br />
-							<select class="form__input" name="raza" required>
+							<select id="raza" class="form__input" name="raza" required>
 								<option value="Sin raza">Sin raza</option>
 								<option value="Affenpinscher">Affenpinscher</option>
 								<option value="Afgano">Afgano</option>
@@ -98,11 +104,22 @@
 						<div>
 							<label class="form__label" for="email">Email</label>
 							<br />
-							<input class="form__input" type="email" name="email" required />
+							<input
+								id="email"
+								class="form__input"
+								type="email"
+								name="email"
+								required
+							/>
 						</div>
 						<br />
 						<div>
-							<input type="checkbox" name="newsletter" value="Si" />
+							<input
+								id="newsletter"
+								type="checkbox"
+								name="newsletter"
+								value="Si"
+							/>
 							<label for="newsletter">Suscribirme al newsletter</label>
 						</div>
 						<br />

@@ -107,3 +107,8 @@
 .item__button:active {
 	box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
 }
+
+.modal__button {
+	background-color: $color-blue !important;
+	border: none;
+}

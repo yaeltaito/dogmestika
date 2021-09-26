@@ -19,8 +19,8 @@ header {
 
 .navbar-brand {
 	img {
-		width: 253px;
-		height: 48px;
+		width: 100%;
+		height: 100%;
 	}
 }
 
@@ -32,6 +32,10 @@ header {
 	header {
 		padding: 20px 15% 15px 15%;
 	}
+}
+
+.navbar__container {
+	gap: 16px;
 }
 
 .navigation__list {

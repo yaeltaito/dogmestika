@@ -27,14 +27,17 @@ header {
   align-items: center; }
 
 .navbar-brand img {
-  width: 253px;
-  height: 48px; }
+  width: 100%;
+  height: 100%; }
 
 @media (max-width: 898px) {
   .header__logo {
     gap: 8px; }
   header {
     padding: 20px 15% 15px 15%; } }
+
+.navbar__container {
+  gap: 16px; }
 
 .navigation__list {
   gap: 12px; }
@@ -101,7 +104,7 @@ footer {
   justify-content: center;
   height: 85vh;
   min-height: 50rem;
-  background-image: url(../img/hero_01.png);
+  background-image: url(../img/hero_01.webp);
   background-repeat: no-repeat;
   background-position: bottom;
   background-position-x: 80%;
@@ -143,7 +146,7 @@ footer {
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
   padding: 8px 16px;
-  background-color: #2680eb;
+  background-color: #2273d4;
   border: none;
   border-radius: 20px;
   color: #ffffff;
@@ -227,7 +230,7 @@ footer {
   color: #ffffff;
   border: none;
   border-radius: 20px;
-  background-color: #2680eb; }
+  background-color: #2273d4; }
 
 .features__button:hover,
 .features__button:active {
@@ -272,7 +275,7 @@ footer {
 .contactUs {
   padding: 30px 15%;
   min-height: calc(100vh - 100px - 80px);
-  background: linear-gradient(to bottom, #2680eb 50%, #0c468e); }
+  background: linear-gradient(to bottom, #2273d4 50%, #0c468e); }
 
 @media (max-width: 1200px) {
   .contactUs img {
@@ -323,7 +326,7 @@ footer {
   color: #ffffff;
   border: none;
   border-radius: 20px;
-  background-color: #2680eb;
+  background-color: #2273d4;
   width: 100%; }
 
 .form__button:hover, .form__button--alternative:hover,
@@ -332,7 +335,7 @@ footer {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .form__button--alternative {
-  color: #2680eb;
+  color: #2273d4;
   border: solid 2px;
   background-color: #ffffff; }
 
@@ -422,11 +425,15 @@ footer {
   color: #ffffff;
   border: none;
   border-radius: 20px;
-  background-color: #2680eb; }
+  background-color: #2273d4; }
 
 .item__button:hover,
 .item__button:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.modal__button {
+  background-color: #2273d4 !important;
+  border: none; }
 
 /* Estilos para la página nosotros */
 .aboutUs {
